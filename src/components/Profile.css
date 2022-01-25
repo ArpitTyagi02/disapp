@@ -1,0 +1,55 @@
+.Formdesign{
+    width: 400px;
+    margin-left: 450px;
+    margin-top: 100px;
+    background-color: rgb(178, 216, 218);
+    border-radius: 20px;
+}
+.UserName{
+    text-align: center;
+    margin-left: 150px;
+    font-size: 20px;
+    border-bottom: black 1.5px solid;
+}
+.UserComments{
+    width: 300px;
+    margin-left: 50px;
+    border: blue 2px solid;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 150px;
+}
+.UserTopic{
+    width: 200px;
+    margin-left: 100px;
+    margin-top: 10px;
+    border: blue 2px solid;
+    border-radius: 20px;
+}
+.UseTopicDesign{
+    text-align: center;
+}
+.UserSubmit{
+    text-align: center;
+    width: 100px;
+    border-radius: 45px;
+    margin-left: 150px;
+    border: blue 2px solid;
+}
+.UserNameValue{
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 300px;
+    border: blue 2px solid;
+}
+.UserNameTopic{
+    text-align: center;
+    margin-left: 170px;
+    font-size: 20px;
+    border-bottom: black 1.5px solid;
+}
+.UserTitle{
+    margin-top: -60px;
+    margin-left: 90px;
+    font-size: 40px;
+}

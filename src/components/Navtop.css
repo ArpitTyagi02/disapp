@@ -1,0 +1,13 @@
+.startMenu{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.iconUser{
+    float:right;
+    margin-right: 30px;
+    margin-top: -40px;
+    line-gap-override: 50px;
+}
+.icon{
+    font-size: medium;
+}
