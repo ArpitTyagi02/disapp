@@ -19,11 +19,9 @@ export class Login extends Component {
     this.props.isLogin(true)
     }
 
-    handleRegister=()=>{
-      this.setState({
-          count:this.state.count+1
-      })
-      console.log(this.state.count)
+    handleRegister=(e)=>{
+        e.preventDefault();
+        this.props.isRegistration(true)
     }
     render() {
         return (
@@ -35,9 +33,8 @@ export class Login extends Component {
                     <input type='email' name='email' placeholder='email..' required onChange={this.handleChange}/>
                     <input type='password' name='pwd' placeholder='Password..' required onChange={this.handleChange}/>
                     <button onSubmit={this.handleSubmit} className='loginButton'>Log In</button>
-                    <button className='loginButton'><Link to="/Registration"></Link>Registration</button>
+                    <button className='loginButton' onSubmit={this.handleRegister}>Registration</button>
                 </form>
-                <Route path="/Registration" render={()=> <Profile/>}/>
                 
             </div>
         )

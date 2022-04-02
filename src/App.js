@@ -9,11 +9,13 @@ import Profile from './components/Profile';
 
 class App extends React.Component {
   state={
-    isLog:false
+    isLog:false,
+    isRegistrat:false
   }
   handleLogin=(isLog)=>this.setState({isLog})
+  handleRegistration=(isRegistrat)=>this.setState({isRegistrat})
   render(){
-   const{isLog}=this.state;
+   const{isLog,isRegistrat}=this.state;
     return (
       <div>
       <Switch>
@@ -23,11 +25,17 @@ class App extends React.Component {
           :
           <Route path="/" render={()=> <Home/>}/>
         }
+        {
+          !isRegistrat ? 
+           <Route  path="/" render={()=> <Login isRegistration={this.handleRegistration}/>}/>
+          :
+          <Route path="/" render={()=> <Profile/>}/>
+        }
       <Route path='*' component={NoMatch} />
       </Switch> 
       {/* <Login/> */}
       </div>
-    );
+    ); 
   }
   
 }
